@@ -1,0 +1,71 @@
+@font-face {
+    font-family: superFont;
+    src: url(fonts/font1.ttf);
+}
+body {
+    font-family: superFont;
+    color: slateblue;
+}
+
+#yasinDiv {
+    text-align: center;
+    animation: mainA 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 normal forwards;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#watchDiv {
+    width: 300px;
+    height: 300px;
+    background-color: slateblue;
+    border-radius: 50%;
+    margin: auto;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watchButton {
+    background-color: slateblue;
+    color: white;
+    font-size: 22px;
+    padding: 20px 40px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 30px 0px 30px 0px;
+    transition: 0.5s;
+}
+.watchButton:hover {
+    cursor: pointer;
+    background-color: rgb(131, 117, 224);
+    scale: 1.1;
+}
+.watchButton:active {
+    background-color: darkblue;
+}
+@keyframes superyasin {
+    from{
+    scale: 1.2;
+    background-color: rgb(63, 48, 159);
+}
+}
+@keyframes mainA {
+    from {
+        opacity: 0;
+        width: 0%;    
+        height: 0%;
+        position: absolute;
+        left: -100%;
+    }
+    to {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+    }
+}

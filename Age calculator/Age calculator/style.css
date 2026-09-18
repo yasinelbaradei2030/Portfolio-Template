@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#mainDiv {
+    text-align: center;
+}
+#logoH1 {
+    padding: 17px 10px 17px 0px;
+    border: 5px solid blue;
+    border-radius: 20px;
+    color: blue;
+}
+#ageSpan {
+    background-color: blue;
+    color: white;
+    border-radius: 20px 0px 0px 20px;
+    padding: 20px;
+}
+input {
+    border-radius: 10px;
+    padding: 5px;
+    border-color: yellow;
+}
+#resultDiv {
+    border: 5px solid darkblue;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    display: none;
+}
+label {
+    border: 5px solid yellow;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}

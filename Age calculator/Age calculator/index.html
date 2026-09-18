@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>"
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainDiv">
+        <h1 id="logoH1"><span id="ageSpan">Age</span>Calculator</h1>
+        <br><br>
+        <input id="nameInput" type="text" placeholder="type your name here">
+        <br><br>
+        <input id="mobileInput" type="number" placeholder="type mobile number here">
+        <br><br>
+        <input id="addressInput" type="text" placeholder="type your address here">
+        <br><br>
+        <label>birth date</label>
+        <br>
+        <input id="dateInput" type="date">
+        <br><br>
+        <button type="button" onclick="validateEnterires()" class="btn btn-warning">Calculate</button>
+    </div>
+    <div id="resultDiv">
+        <h3 id="resultH3"></h3>
+        <br><br>
+        <button class="btn btn-lg btn-primary" onclick="reset()">try again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
